@@ -8,7 +8,7 @@ body {
 }
 #quote {
 	padding: 10px;
-	border: 3px solid #000;
+	border: 3px solid #680f15;
 	background: #0a0a0a;
 	border-radius: 20px;
 	margin: auto;
@@ -31,7 +31,8 @@ h1,h2,h3,h4,h5,h6 {
 a {
 	cursor:pointer;
 	color:#00ebeb;
-	text-decoration:none;
+  text-decoration:none;
+  word-wrap: break-word;
 	text-shadow: 0 0 1px #00ebeb, 0 -1px 1px rgba(255, 255, 255, 0.8), 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 10px #00ebeb, 0 0 5px rgba(209, 0, 177, 0.8);
 	font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
 	font-size: 100%;
@@ -99,15 +100,16 @@ img::-moz-selection {
   color: white;
   background: transparent;
 }
-/* img {
-	padding: 10px;
-	border: 3px solid #000;
-	background: #0a0a0a;
-	border-radius: 5px;
+img {
   max-width: 100%;
-	margin: auto;
-	display: block;
-} */
+  height: auto;
+	background: #0a0a0a;
+	/* padding: 10px; */
+	/* border: 3px solid #000; */
+	/* border-radius: 5px; */
+	/* margin: auto; */
+	/* display: block; */
+}
 
 
 
@@ -130,7 +132,7 @@ img.avatar-img {
 
 .navbar-custom {
   background: #000;
-  border-bottom: 3px solid #d100b1;
+  border-bottom: 3px solid #aa0611;
   font-family: 'Fira Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
 }
 
@@ -184,7 +186,7 @@ img.avatar-img {
 	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	border: 3px solid #d100b1;
+	border: 3px solid #aa0611;
 }
 .navbar-custom .avatar-container  .avatar-img {
   width: 100%;
@@ -269,7 +271,7 @@ img.avatar-img {
 footer {
 	padding: 30px 0;
 	background: #000;
-	border-top: 3px #d100b1 solid;
+	border-top: 3p #aa0611 solid;
 	margin-top: 50px;
 	font-size: 12px;
 	font-family: monospace;
@@ -531,7 +533,7 @@ footer .theme-by {
   border-radius: 5px;
 	color: #ccc;
 	background: #000;
-  border: 1px solid #d100b1;
+  border: 1px solid #aa0611;
 }
 @media only screen and (min-width: 768px) {
   .pager li a {
@@ -542,7 +544,7 @@ footer .theme-by {
 .pager li a:focus {
 	background: #000;
   color: #00ebeb;
-  border: 1px solid #d100b1;
+  border: 1px solid #aa0611;
 }
 
 .pager {
