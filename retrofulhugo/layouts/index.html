@@ -34,22 +34,28 @@
             {{ range $pag.Pages }}
             <article class="post-preview">
               <a href="{{ .Permalink }}">
-          	  <h1 class="post-title">{{ .Title }}</h1>
+              {{ if isset .Params "bigimg" }}
+                <a href="{{ .Permalink }}"><img class="post-cover" src="{{ .Params.bigimg }}" alt="post image"></a>
+              {{ else }}
+                <img class="post-cover" src="/img/background.png" alt="post image">
+              {{ end }}
+              <h1 class="post-title">{{ .Title }}</h1>
+              
           	
           	  {{ if .Params.subtitle }}
           	  <h3 class="post-subtitle">
           	    {{ .Params.subtitle }}
           	  </h3>
-          	  {{ end }}  
+          	  {{ end }}
               </a>
 
               <p class="post-meta">
-							Posted on {{ .Date.Format "January 2, 2006" }} | written by {{ .Site.Author.handle }}
+              {{ .Date.Format "January 2, 2006" }} | {{ .ReadingTime }} min read {{ if not (in .Params.categories "recap") }} | Posted by {{ .Site.Author.handle }} {{ end }}  
               </p>
             
               <div class="post-entry">
-											<p>{{ .Summary }}</p>
-								<a href="{{ .Permalink }}" class="post-read-more">[READ&nbsp;MORE]</a>
+                <small>{{ .Summary }}</small>
+								<a href="{{ .Permalink }}" class="post-read-more">[READ]</a>
               </div>
             
              </article>
