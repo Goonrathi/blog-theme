@@ -666,7 +666,7 @@ code[class*=language-],pre[class*=language-], code {
 
 small {
 	display: block;
-	text-align: center;
+	text-align: left;
 	font-style: italic;
 	font-size: 70%;
 	padding-top: 5px;
