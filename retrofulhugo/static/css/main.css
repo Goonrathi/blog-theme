@@ -22,8 +22,8 @@ body {
 }
 
 p {
-  line-height: 1.5;
-  margin: 30px 0px 0px;
+  /* line-height: 1.5; */
+  margin: 0px 0px 0px;
 	text-align: justify;
 	color: #999;
 }
@@ -56,7 +56,7 @@ blockquote, p blockquote {
 	border: 3px solid #680f15;
 	background: #0a0a0a;
 	border-radius: 20px;
-	margin: auto;
+	margin: 10px 0px;
 }
 
 blockquote p:first-child {
@@ -483,7 +483,7 @@ footer .theme-by {
     margin-top: 130px;
   }
   .intro-header.big-img {
-    margin-top: 91px;  /* Full navbar is small navbar + 20px padding on each side when expanded */
+    margin-top: 0px;  /* Full navbar is small navbar + 20px padding on each side when expanded (formerly 91px)*/
   } 
   .intro-header.big-img .page-heading,
   .intro-header.big-img .post-heading  {
@@ -670,4 +670,34 @@ small {
 	font-style: italic;
 	font-size: 70%;
 	padding-top: 5px;
+}
+
+
+
+
+
+/* EXTRAS */
+
+.poster {
+	padding: 10px;
+	border: 6px solid #680f15;
+	background: #0a0a0a;
+  border-radius: 20px;
+  position: relative;
+  bottom: -24px;
+  margin-left: -30px;
+  z-index: -1;
+  width: 20%;
+}
+
+.redditposter {
+  position: relative;
+  place-content: 0px;
+  height: 0px;
+  bottom: 3px;
+  left: 14px;
+}
+
+figure {
+  scale: 50%;
 }
